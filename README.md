@@ -8,3 +8,24 @@
 
 > 菜单栏递归注意点
 
+> **路由**
+
+- 配置路由时候需要注意关键字
+
+#### Antd UI组件
+
+> `Button`控件
+
+> `Modal`控件
+
+> `Loading`控件
+
+> `Notice`控件
+
+> `Message`控件
+
+> `Tab`控件
+
+> `Gallery`控件
+
+> `Carousel`控件

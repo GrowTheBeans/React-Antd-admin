@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Row, Col } from 'antd';
 import './header.less';
 import {FormateDate} from '../../Utils/utils.js';
@@ -23,7 +24,7 @@ class Header extends React.Component {
         <Row className="Header-top">
           <Col span={24}>
             <span>欢迎,{this.state.name}</span>
-            <a href="/">退出</a>
+            <Link to='/login'>退出</Link>
           </Col>
         </Row>
         <Row className="breadcrumb">

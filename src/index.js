@@ -2,12 +2,12 @@ import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
 import './stylus/index.less';
-import App from './App';
+import IRouter from './Router/router.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <Fragment>
-    <App />
+    <IRouter />
   </Fragment>,
   document.getElementById('root')
 );
