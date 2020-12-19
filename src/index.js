@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
-import './stylus/reset.less';
+import './stylus/index.less';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

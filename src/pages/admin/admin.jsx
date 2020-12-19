@@ -16,7 +16,7 @@ class admin extends Component {
           <Col span={21} className="main">
             <Header />
             <Row className="content">
-              content
+              页面主体内容
             </Row>
             <Footer />
           </Col>
