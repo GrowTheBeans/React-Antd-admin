@@ -1,10 +1,12 @@
 const menuList = [
   {
     title: '首页',
+    icon: 'slack',
     key: '/home'
   },
   {
     title: 'UI',
+    icon: 'radar-chart',
     key: '/ui',
     children: [
       {
@@ -44,6 +46,7 @@ const menuList = [
   {
     title: '表单',
     key: '/form',
+    icon: 'form',
     children: [
       {
         title: '登录',
@@ -58,6 +61,7 @@ const menuList = [
   {
     title: '表格',
     key: '/table',
+    icon: 'appstore',
     children: [
       {
         title: '基础表格',
@@ -71,15 +75,18 @@ const menuList = [
   },
   {
     title: '富文本',
+    icon: 'book',
     key: '/rich'
   },
   {
     title: '城市管理',
+    icon: 'home',
     key: '/city'
   },
   {
     title: '订单管理',
     key: '/order',
+    icon: 'money-collect',
     btnList: [
       {
         title: '订单详情',
@@ -93,15 +100,18 @@ const menuList = [
   },
   {
     title: '员工管理',
-    key: '/user'
+    key: '/user',
+    icon: 'contacts',
   },
   {
     title: '车辆地图',
-    key: '/bikeMap'
+    key: '/bikeMap',
+    icon: 'dashboard',
   },
   {
     title: '图标',
     key: '/charts',
+    icon: 'deployment-unit',
     children: [
       {
         title: '柱形图',
@@ -119,6 +129,7 @@ const menuList = [
   },
   {
     title: '权限设置',
+    icon: 'setting',
     key: '/permission'
   },
 ];

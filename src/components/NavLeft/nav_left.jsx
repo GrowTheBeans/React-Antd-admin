@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Layout } from 'antd';
+import { Menu, Layout, Icon } from 'antd';
 import './nav_left.less';
 import logo from '../../images/logo.svg';
 import MenuConfig from '../../config/menuConfig.js';
@@ -20,13 +20,17 @@ class NavLeft extends React.Component {
         return (
           <SubMenu
             key={item.key}
-            title={item.title}
-          >
+            title={
+              <span>
+                <Icon type={item.icon} />
+                <span>{item.title}</span>
+              </span>
+            }>
             {this.MenucList(item.children)}
           </SubMenu>
         )
       }
-      return <Menu.Item title={item.title} key={item.key}>{item.title}</Menu.Item>
+      return <Menu.Item title={item.title} key={item.key}><Icon type={item.icon} />{item.title}</Menu.Item>
     })
   }
   render() {
