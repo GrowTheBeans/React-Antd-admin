@@ -31,15 +31,13 @@ class NavLeft extends React.Component {
   }
   render() {
     return (
-      <Sider
-        
-      >
-        <div className="nav_left">
+      <Sider>
+        <div className="nav_left_containers">
           <div className="logo">
             <img width={60} height={60} src={logo} alt="logo" />
             <h1>Imooc MS</h1>
           </div>
-          <Menu mode="inline" theme="dark" style={{
+          <Menu mode="inline" theme="dark" className="nav_left_menu" style={{
             overflow: 'auto',
             height: '100vh',
             position: 'fixed',
