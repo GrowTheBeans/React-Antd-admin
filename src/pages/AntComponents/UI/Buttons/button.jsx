@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './button.less';
 
 class AntButton extends Component {
   render() {
