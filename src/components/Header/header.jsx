@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Row, Col, Icon } from 'antd';
+import { Row, Col, Icon, Avatar, Menu, Dropdown } from 'antd';
 import './header.less';
 import { FormateDate } from '../../Utils/utils.js';
 
@@ -24,6 +23,19 @@ class Header extends React.Component {
     })
   }
   render() {
+    const menu = (
+      <Menu>
+        <Menu.Item key="0">
+          <a target="_blank" onClick={e => e.preventDefault()}>
+            个人中心
+          </a>
+        </Menu.Item>
+        <Menu.Divider />
+        <Menu.Item key="1">
+          退出页面
+        </Menu.Item>
+      </Menu>
+    );
     return (
       <div className="Header">
         <Row className="Header-top">
@@ -35,8 +47,10 @@ class Header extends React.Component {
             />
           </Col>
           <Col span={22}>
-            <span>欢迎,{this.state.name}</span>
-            <Link to='/login'>退出</Link>
+            <span className="name">欢迎,{this.state.name}</span>
+            <Dropdown overlay={menu}>
+              <Avatar className="avatar-img" src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+            </Dropdown>
           </Col>
         </Row>
         <Row className="breadcrumb">
