@@ -1,9 +1,10 @@
 import React from 'react';
-import { Menu } from 'antd';
+import { Menu, Layout } from 'antd';
 import './nav_left.less';
 import logo from '../../images/logo.svg';
 import MenuConfig from '../../config/menuConfig.js';
 const { SubMenu } = Menu;
+const { Sider } = Layout;
 
 class NavLeft extends React.Component {
   constructor(props) {
@@ -30,15 +31,24 @@ class NavLeft extends React.Component {
   }
   render() {
     return (
-      <div className="nav_left">
-        <div className="logo">
-          <img width={60} height={60} src={logo} alt="logo" />
-          <h1>Imooc MS</h1>
+      <Sider
+        
+      >
+        <div className="nav_left">
+          <div className="logo">
+            <img width={60} height={60} src={logo} alt="logo" />
+            <h1>Imooc MS</h1>
+          </div>
+          <Menu mode="inline" theme="dark" style={{
+            overflow: 'auto',
+            height: '100vh',
+            position: 'fixed',
+            left: 0,
+          }}>
+            {this.setState.menuTreeNode}
+          </Menu>
         </div>
-        <Menu mode="inline" theme="dark">
-          {this.setState.menuTreeNode}
-        </Menu>
-      </div>
+      </Sider>
     )
   }
 }

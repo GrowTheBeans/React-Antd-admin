@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import App from '../App.js';
 import Amian from '../pages/admin/admin.jsx';
 import Home from '../pages/home/home.jsx';
 import Login from '../pages/login/login.jsx';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Exception404 from '../pages/Exception/404.jsx';
 
 class IRouter extends Component {
   render() {
@@ -18,6 +19,9 @@ class IRouter extends Component {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/404">
+            <Exception404/>
           </Route>
         </App>
       </Router>

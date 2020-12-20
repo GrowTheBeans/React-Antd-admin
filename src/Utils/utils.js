@@ -2,7 +2,6 @@
  * 定义格式化时间
  */
 
-
 function FormateDate(data) {
   if (!data) {
     return null;
