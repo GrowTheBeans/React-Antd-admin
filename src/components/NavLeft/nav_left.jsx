@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { Menu, Layout, Icon } from 'antd';
 import './nav_left.less';
 import logo from '../../images/logo.svg';
@@ -21,36 +21,42 @@ class NavLeft extends React.Component {
           <SubMenu
             key={item.key}
             title={
-              <span>
-                <Icon type={item.icon} />
+              <Fragment>
+                {item.icon ? <Icon type={item.icon} /> : null}
                 <span>{item.title}</span>
-              </span>
+              </Fragment>
             }>
             {this.MenucList(item.children)}
           </SubMenu>
         )
       }
-      return <Menu.Item title={item.title} key={item.key}><Icon type={item.icon} />{item.title}</Menu.Item>
+      return <Menu.Item title={item.title} key={item.key}>
+        {item.icon ? <Icon type={item.icon} /> : null}
+        <span>{item.title}</span>
+      </Menu.Item>
     })
   }
   render() {
     return (
-      <Sider>
-        <div className="nav_left_containers">
-          <div className="logo">
-            <img width={60} height={60} src={logo} alt="logo" />
-            <h1>Imooc MS</h1>
+      <Layout style={{ minHeight: '100vh' }}>
+        <Sider>
+          <div className="nav_left_containers">
+            <div className="logo">
+              <img width={60} height={60} src={logo} alt="logo" />
+              <h1>Imooc MS</h1>
+            </div>
+            <Menu mode="inline" theme="dark" className="nav_left_menu" style={{
+              overflow: 'auto',
+              height: '100vh',
+              position: 'fixed',
+              // bottom: '40px',
+              // top: '60px'
+            }}>
+              {this.setState.menuTreeNode}
+            </Menu>
           </div>
-          <Menu mode="inline" theme="dark" className="nav_left_menu" style={{
-            overflow: 'auto',
-            height: '100vh',
-            position: 'fixed',
-            left: 0,
-          }}>
-            {this.setState.menuTreeNode}
-          </Menu>
-        </div>
-      </Sider>
+        </Sider>
+      </Layout>
     )
   }
 }
