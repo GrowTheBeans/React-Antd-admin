@@ -26,7 +26,7 @@ class Header extends React.Component {
     const menu = (
       <Menu>
         <Menu.Item key="0">
-          <a target="_blank" onClick={e => e.preventDefault()}>
+          <a href="/" onClick={e => e.preventDefault()}>
             个人中心
           </a>
         </Menu.Item>
