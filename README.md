@@ -31,3 +31,7 @@
 > `Gallery`控件
 
 > `Carousel`控件
+
+#### 借鉴学习资料
+
+- [资料](https://antd-course.ulivz.com/intro.html#ant-design-%E4%BB%8B%E7%BB%8D)
