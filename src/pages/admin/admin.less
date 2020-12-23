@@ -1,17 +1,16 @@
 .admin_container {
-  display: flex;
-  flex-direction: column;
-
-  // .nav_left {
-  // }
-
-  .main {
-    // width: 100%;
+  .admin_main_right {
     flex: 1;
-  }
+    position: fixed;
+    right: 0;
+    left: 240px;
+    min-width: 500px;
+    width: calc(100% - 240px);
 
-  .content {
-    height: 100%;
-    background-color: #f0f2f5;
+    .main_header {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
   }
 }

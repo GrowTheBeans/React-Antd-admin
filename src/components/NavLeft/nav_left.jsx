@@ -38,20 +38,14 @@ class NavLeft extends React.Component {
   }
   render() {
     return (
-      <Layout style={{ minHeight: '100vh' }}>
-        <Sider>
+      <Layout>
+        <Sider width={240} style={{ minHeight: '100vh' }}>
           <div className="nav_left_containers">
             <div className="logo">
               <img width={60} height={60} src={logo} alt="logo" />
               <h1>Imooc MS</h1>
             </div>
-            <Menu mode="inline" theme="dark" className="nav_left_menu" style={{
-              overflow: 'auto',
-              height: '100vh',
-              position: 'fixed',
-              // bottom: '40px',
-              // top: '60px'
-            }}>
+            <Menu mode="inline" theme="dark" className="nav_left_menu">
               {this.setState.menuTreeNode}
             </Menu>
           </div>

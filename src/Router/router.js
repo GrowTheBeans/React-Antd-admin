@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 import App from '../App.js';
 import Amian from '../pages/admin/admin.jsx';
-import Home from '../pages/home/home.jsx';
 import Login from '../pages/login/login.jsx';
 import Exception404 from '../pages/Exception/404.jsx';
-
+let history = createBrowserHistory();
 class IRouter extends Component {
   render() {
     return (
-      <Router className="router_containers">
+      <Router className="router_containers" history={history}>
         <App>
           <Route exact path="/">
             <Amian />
@@ -17,10 +17,7 @@ class IRouter extends Component {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/404">
+          <Route path="*">
             <Exception404/>
           </Route>
         </App>
