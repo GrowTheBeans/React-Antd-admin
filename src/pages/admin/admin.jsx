@@ -12,12 +12,12 @@ class admin extends Component {
       <div className="admin_container">
         <Row>
           <Col span={3}>
-            <NavLeft className="admin_nav_left"/>
+            <NavLeft className="admin_nav_left" />
           </Col>
           <Col span={21} className="admin_main_right">
-            <Header className="main_header"/>
+            <Header className="main_header" />
             <Row className="content">
-              <Home/>
+              <Home />
             </Row>
             <Footer />
           </Col>

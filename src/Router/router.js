@@ -18,7 +18,7 @@ class IRouter extends Component {
             <Login />
           </Route>
           <Route path="*">
-            <Exception404/>
+            <Exception404 />
           </Route>
         </App>
       </Router>
