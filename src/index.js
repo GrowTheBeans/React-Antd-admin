@@ -2,12 +2,14 @@ import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
 import './stylus/reset.less';
-import App from './App';
+import './stylus/base.less';
+// import App from './App';
+import Ddmin from './pages/admin/admin.jsx'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <Fragment>
-    <App />
+    <Ddmin/>
   </Fragment>,
   document.getElementById('root')
 );
