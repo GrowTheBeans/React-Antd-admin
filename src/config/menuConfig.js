@@ -26,32 +26,6 @@ const menuList = [
       {
         title: '全局Message',
         key: '/ui/messages',
-      },
-      {
-        title: 'Tab页签',
-        key: '/ui/tabs',
-      },
-      {
-        title: '图片画廊',
-        key: '/ui/gallery',
-      },
-      {
-        title: '轮播图',
-        key: '/ui/carousel',
-      }
-    ]
-  },
-  {
-    title: '表单',
-    key: '/form',
-    children: [
-      {
-        title: '登录',
-        key: '/form/login',
-      },
-      {
-        title: '注册',
-        key: '/form/reg',
       }
     ]
   },
@@ -70,36 +44,6 @@ const menuList = [
     ]
   },
   {
-    title: '富文本',
-    key: '/rich'
-  },
-  {
-    title: '城市管理',
-    key: '/city'
-  },
-  {
-    title: '订单管理',
-    key: '/order',
-    btnList: [
-      {
-        title: '订单详情',
-        key: 'detail'
-      },
-      {
-        title: '结束订单',
-        key: 'finish'
-      }
-    ]
-  },
-  {
-    title: '员工管理',
-    key: '/user'
-  },
-  {
-    title: '车辆地图',
-    key: '/bikeMap'
-  },
-  {
     title: '图标',
     key: '/charts',
     children: [
@@ -116,6 +60,10 @@ const menuList = [
         key: '/charts/line'
       },
     ]
+  },
+  {
+    title: '富文本',
+    key: '/rich'
   },
   {
     title: '权限设置',

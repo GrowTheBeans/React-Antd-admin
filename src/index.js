@@ -1,16 +1,18 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
 import './stylus/reset.less';
 import './stylus/base.less';
 // import App from './App';
-import Ddmin from './pages/admin/admin.jsx'
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/es/locale/zh_CN';
+import TopNavHeader from './pages/TopNavHeader/index.jsx'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Fragment>
-    <Ddmin/>
-  </Fragment>,
+  <ConfigProvider locale={zhCN}>
+    <TopNavHeader />
+  </ConfigProvider>,
   document.getElementById('root')
 );
 
