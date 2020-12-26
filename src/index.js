@@ -1,14 +1,18 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
-import './stylus/index.less';
-import IRouter from './Router/router.js';
+import './stylus/reset.less';
+import './stylus/base.less';
+// import App from './App';
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/es/locale/zh_CN';
+import TopNavHeader from './pages/TopNavHeader/index.jsx'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Fragment>
-    <IRouter />
-  </Fragment>,
+  <ConfigProvider locale={zhCN}>
+    <TopNavHeader />
+  </ConfigProvider>,
   document.getElementById('root')
 );
 
