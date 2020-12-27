@@ -23,7 +23,7 @@ class TopNavHeader extends React.Component {
         <Sider width={256} trigger={null} collapsible collapsed={collapsed} className={styles.sider}>
           <div className={styles.logo} key="logo" id="logo">
             <img src={logo} alt="logo" width="32" />
-            <h1>Ant Design Pro</h1>
+            <h1>Ant 后台管理</h1>
           </div>
           <Menu
             defaultSelectedKeys={['1']}
@@ -85,8 +85,14 @@ class TopNavHeader extends React.Component {
             <RightContent />
           </Header>
           <Breadcrumb style={{ margin: '16px 0 0 16px' }}>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>List</Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <Icon type="home" />
+              <span>home</span>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <Icon type="user" />
+              <span>Application List</span>
+            </Breadcrumb.Item>
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
           <Content
