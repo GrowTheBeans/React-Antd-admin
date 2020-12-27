@@ -2,16 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
 import './stylus/index.less';
-// import App from './App';
 import { ConfigProvider } from 'antd';
+import Router from './router/index.jsx';
 import zhCN from 'antd/es/locale/zh_CN';
-// import TopNavHeader from './Layouts/TopNavHeader/index.jsx'
-import UserLogin from './Layouts/UserLogin/index.jsx'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <ConfigProvider locale={zhCN}>
-    <UserLogin />
+    <Router />
   </ConfigProvider>,
   document.getElementById('root')
 );
