@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #### 整体布局模拟 **Antd Pro** 项目
 
 #### 使用的技术栈
@@ -39,7 +38,3 @@
 
 
 #### `Redux` [知识点](./README.md)
-=======
-# React-Antd-admin
-基于React和antd搭建的后台管理系统
->>>>>>> parent of 4f273b9... feature:项目初始化，和项目主体构建
