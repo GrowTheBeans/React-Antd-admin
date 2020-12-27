@@ -3,6 +3,10 @@ import { Menu, Dropdown, Avatar, Icon } from 'antd';
 import styles from './index.module.less';
 
 class HeaderRight extends Component {
+  OnLogout = () => {
+    // this.props.history.push('/login')
+    console.log(234);
+  }
   render() {
     const menu = (
       <Menu className={styles.menu}>
@@ -16,8 +20,8 @@ class HeaderRight extends Component {
           <Icon type="close-circle" />触发报错
         </Menu.Item>
         <Menu.Divider />
-        <Menu.Item>
-          <Icon type="logout" />退出登录
+        <Menu.Item onClick={this.OnLogout}>
+          <Icon type="logout"/>退出登录
         </Menu.Item>
       </Menu>
     )
