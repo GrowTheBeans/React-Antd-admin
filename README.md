@@ -1,5 +1,41 @@
 ### React 知识点
 
+#### 一：类组件
+
+- `this`指向问题
+
+    - 一般使用的事件绑定写法有三种
+
+- [x] 第一种利用`bing`绑定，写法如下，这种比较少用
+
+- [x] 第二种箭头函数写法
+
+- [x] 第三种在箭头函数返回一个函数
+
+> 修改渲染**dom**数据
+
+- `setState` 是异步，底层设计同一个生命周期会批量更新 `state`
+
+- `setState` 第二个参数是一个可选参数，传入一个回调函数可以获取到最新的`state`
+
+```js
+
+
+
+```
+
+> 生命周期
+
+- ``
+
+> 复合组件
+
+- 类似于`vue`插槽
+
+
+
+#### 二：无状态组件（函数式组件）
+
 > `Context`
 
 - [x] 表示上下文
@@ -20,7 +56,6 @@
 > `ContextType`
 
 - [x] 表示`Context`的语法糖
-
 
 > `lazy` 
 
@@ -75,4 +110,19 @@ import('./detail.js').then(...)
 - [x] `Update`之后 `componentDidUpdate`
 
 - [x] `Unmount`之前 `componentWillUnmount`
+
+> `useEffect` 副作用
+
+> 使用 `Context Hooks`
+
+> 使用 `useContext` 和 `useReducer`
+
+- `useContext` 表示父子组件传值
+
+    - 提供器 需要配置 `Provider` 
+
+- `useReducer` 表示状态共享（和 redux）类似
+
+> 使用 `Hooks Ref`
+
 
