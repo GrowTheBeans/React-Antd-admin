@@ -1,7 +1,8 @@
 import React from 'react';
-import { Row, Col, Icon, Avatar, Menu, Dropdown } from 'antd';
+import { Row, Col, Icon, Menu, Dropdown } from 'antd';
 import './header.less';
 import { FormateDate } from '../../Utils/utils.js';
+import IconFont from '../../images/iconFont.js';
 
 class Header extends React.Component {
   constructor(props) {
@@ -49,7 +50,7 @@ class Header extends React.Component {
           <Col span={22}>
             <span className="name">欢迎,{this.state.name}</span>
             <Dropdown overlay={menu}>
-              <Avatar className="avatar-img" src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+              <IconFont type="icon-gerendingzhi" style={{ fontSize: '20px' }}  />
             </Dropdown>
           </Col>
         </Row>
@@ -57,7 +58,7 @@ class Header extends React.Component {
           <Col span={4} className="title">首页</Col>
           <Col span={20} className="weather">
             <span className="date">{this.state.styTime}</span>
-            <span>请转多云</span>
+            <IconFont type="icon-xue" style={{ fontSize: '18px' }}  />
           </Col>
         </Row>
       </div>
