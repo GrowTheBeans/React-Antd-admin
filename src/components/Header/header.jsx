@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Icon, Menu, Dropdown } from 'antd';
+import { Row, Col, Icon, Menu, Dropdown, Tooltip, Badge } from 'antd';
 import './header.less';
 import { FormateDate } from '../../Utils/utils.js';
 import IconFont from '../../images/iconFont.js';
@@ -58,7 +58,11 @@ class Header extends React.Component {
           <Col span={4} className="title">首页</Col>
           <Col span={20} className="weather">
             <span className="date">{this.state.styTime}</span>
-            <IconFont type="icon-xue" style={{ fontSize: '18px' }}  />
+            <Tooltip placement="left" title="今天天气">
+              <Badge dot>
+                <IconFont type="icon-xue" style={{ fontSize: '18px' }}  />
+              </Badge>
+            </Tooltip>
           </Col>
         </Row>
       </div>

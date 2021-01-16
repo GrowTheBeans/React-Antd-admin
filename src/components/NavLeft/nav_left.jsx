@@ -43,7 +43,7 @@ class NavLeft extends React.Component {
           <div className="nav_left_containers">
             <div className="logo">
               <img width={40} height={40} src={logo} alt="logo" />
-              <h1>Imooc MS</h1>
+              <h1>Imooc&nbsp;MS</h1>
             </div>
             <Menu mode="inline" theme="dark" className="nav_left_menu">
               {this.setState.menuTreeNode}
