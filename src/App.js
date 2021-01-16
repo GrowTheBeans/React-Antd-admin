@@ -1,11 +1,12 @@
 import React from 'react';
-import Admin from './pages/admin/admin.jsx';
+// import Admin from './pages/admin/admin.jsx';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Admin/>
+        123
+        {/* <Admin/> */}
       </div>
     );
   }

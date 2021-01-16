@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import App from '../App.js';
-import Amian from '../pages/admin/admin.jsx';
+import Home from '../pages/home/home.jsx';
 import Login from '../pages/login/login.jsx';
-import Exception404 from '../pages/Exception/404.jsx';
+// import Button from '../pages/AntComponents/UI/Buttons/button.jsx';
+// import Exception404 from '../pages/Exception/404.jsx';
 let history = createBrowserHistory();
 class IRouter extends Component {
   render() {
@@ -12,14 +13,14 @@ class IRouter extends Component {
       <Router className="router_containers" history={history}>
         <App>
           <Route exact path="/">
-            <Amian />
+            <Home/>
           </Route>
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="*">
-            <Exception404 />
-          </Route>
+          {/* <Route path="*"> */}
+          {/* <Exception404 /> */}
+          {/* </Route> */}
         </App>
       </Router>
     )

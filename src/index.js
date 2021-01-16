@@ -1,13 +1,14 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
 import './stylus/index.less';
-import IRouter from './Router/router.js';
+// import IRouter from './Router/router.js';
 import reportWebVitals from './reportWebVitals';
+import Admin from './pages/admin/admin.jsx';
 
 ReactDOM.render(
   <Fragment>
-    <IRouter />
+    <Admin />
   </Fragment>,
   document.getElementById('root')
 );
