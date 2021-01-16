@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import { Menu, Layout, Icon } from 'antd';
 import './nav_left.less';
 import logo from '../../images/logo.svg';
@@ -21,10 +21,10 @@ class NavLeft extends React.Component {
           <SubMenu
             key={item.key}
             title={
-              <Fragment>
+              <>
                 {item.icon ? <Icon type={item.icon} /> : null}
                 <span>{item.title}</span>
-              </Fragment>
+              </>
             }>
             {this.MenucList(item.children)}
           </SubMenu>

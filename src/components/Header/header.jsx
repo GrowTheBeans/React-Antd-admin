@@ -1,7 +1,7 @@
 import React from 'react';
-import { Row, Col, Icon, Menu, Dropdown, Tooltip, Badge } from 'antd';
+import {Row, Col, Icon, Menu, Dropdown, Tooltip, Badge} from 'antd';
 import './header.less';
-import { FormateDate } from '../../Utils/utils.js';
+import {FormateDate} from '../../Utils/utils.js';
 import IconFont from '../../images/iconFont.js';
 
 class Header extends React.Component {
@@ -18,22 +18,24 @@ class Header extends React.Component {
       })
     }, 1000)
   }
+
   toggle = () => {
     this.setState({
       collapsed: !this.state.collapsed
     })
   }
+
   render() {
     const menu = (
       <Menu>
         <Menu.Item key="0">
           <a href="/" onClick={e => e.preventDefault()}>
-            个人中心
+            <IconFont type="icon-gerenzhongxin" style={{fontSize: '12px', marginRight: '6px'}}/>个人中心
           </a>
         </Menu.Item>
-        <Menu.Divider />
+        <Menu.Divider/>
         <Menu.Item key="1">
-          退出页面
+          <IconFont type="icon-tuichu" style={{fontSize: '12px'}}/>退出页面
         </Menu.Item>
       </Menu>
     );
@@ -42,7 +44,7 @@ class Header extends React.Component {
         <Row className="Header-top">
           <Col span={2} className="icon-title">
             <Icon
-              style={{ fontSize: '20px' }}
+              style={{fontSize: '20px'}}
               onClick={this.toggle}
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
             />
@@ -50,7 +52,7 @@ class Header extends React.Component {
           <Col span={22}>
             <span className="name">欢迎,{this.state.name}</span>
             <Dropdown overlay={menu}>
-              <IconFont type="icon-gerendingzhi" style={{ fontSize: '20px' }}  />
+              <IconFont type="icon-gerendingzhi" style={{fontSize: '20px'}}/>
             </Dropdown>
           </Col>
         </Row>
@@ -60,7 +62,7 @@ class Header extends React.Component {
             <span className="date">{this.state.styTime}</span>
             <Tooltip placement="left" title="今天天气">
               <Badge dot>
-                <IconFont type="icon-xue" style={{ fontSize: '18px' }}  />
+                <IconFont type="icon-xue" style={{fontSize: '18px'}}/>
               </Badge>
             </Tooltip>
           </Col>

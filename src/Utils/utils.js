@@ -34,6 +34,7 @@ function FormateDate(data) {
   let S = second < 10 ? "0" + second : second;
   return `${get_fullYear}-${M}-${R} ${H}:${I}:${S}`;
 }
+
 export {
   FormateDate
 };
